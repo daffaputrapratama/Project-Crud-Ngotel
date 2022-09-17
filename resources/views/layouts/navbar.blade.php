@@ -288,7 +288,7 @@
         data-bs-toggle="dropdown" aria-haspopup="true">
         <div class="user-nav d-sm-flex d-none">
           <span class="user-name fw-bolder">
-                          John Doe
+                          Daffa Gantengs
                       </span>
           <span class="user-status">
             Admin

@@ -74,22 +74,10 @@ data-asset-path="http://127.0.0.1:8000/">
 @include('layouts.navbar')
 <!-- END: INI UNTUK NAVBAR NAVBAR-->
 
-
-
-
-
 <!-- BEGIN: Main Menu-->
 @include('layouts.sidebar')
 <!-- END: Main Menu-->
     
-
-
-
-
-
-
-
-
   <!-- BEGIN: Content-->
   <div class="app-content content ">
     <!-- BEGIN: Header-->
