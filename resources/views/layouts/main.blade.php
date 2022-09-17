@@ -89,8 +89,9 @@ data-asset-path="http://127.0.0.1:8000/">
    <!-- Content Body Start -->
         <!-- Content Body Start -->
       <div class="content-body">
-       
-        <h1>Halo Halo Test</h1>
+      
+     
+      @yield('tambahKamar')
 
       </div>
       <!-- Content Body Start -->

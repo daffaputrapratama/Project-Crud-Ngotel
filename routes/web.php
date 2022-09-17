@@ -13,6 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Guide : Untuk menuju halaman login : /toLogin
+// Guide : Untuk menuju halaman login : /toRegister
+
 Route::get('/', function () {
     return view('layouts.main');
 });
+
+
+Route::get('/tambahKamar', function () {
+    return view('pages.adminView.tambahKamar');
+});
+
+Route::get('/loginView', function () {
+    return view('pages.userView.loginView.loginView');
+});
+
+Route::get('/registerView', function () {
+    return view('pages.userView.registerView.registerView');
+});
+
