@@ -19,42 +19,70 @@
     content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
   <meta name="author" content="PIXINVENT">
   <title>Form Wizard - Vuexy - Bootstrap HTML & Laravel admin template</title>
-  <link rel="apple-touch-icon" href="http://127.0.0.1:3000/images/ico/favicon-32x32.png">
-  <link rel="shortcut icon" type="image/x-icon" href="http://127.0.0.1:3000/images/logo/favicon.ico">
+  <link rel="apple-touch-icon" href="http://127.0.0.1:8000/images/ico/favicon-32x32.png">
+  <link rel="shortcut icon" type="image/x-icon" href="http://127.0.0.1:8000/images/logo/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
     rel="stylesheet">
 
   
   <!-- BEGIN: Vendor CSS-->
-  <link rel="stylesheet" href="http://127.0.0.1:3000/vendors/css/vendors.min.css" />
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/vendors.min.css" />
 
   <!-- vendor css files -->
-  <link rel="stylesheet" href="http://127.0.0.1:3000/vendors/css/forms/wizard/bs-stepper.min.css">
-  <link rel="stylesheet" href="http://127.0.0.1:3000/vendors/css/forms/select/select2.min.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/forms/wizard/bs-stepper.min.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/forms/select/select2.min.css">
 <!-- END: Vendor CSS-->
 
 <!-- BEGIN: Theme CSS-->
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/core.css" />
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/base/themes/dark-layout.css" />
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/base/themes/bordered-layout.css" />
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/base/themes/semi-dark-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/core.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/dark-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/bordered-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/semi-dark-layout.css" />
 
 
 <!-- BEGIN: Page CSS-->
-  <link rel="stylesheet" href="http://127.0.0.1:3000/css/base/core/menu/menu-types/vertical-menu.css" />
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/core/menu/menu-types/vertical-menu.css" />
 
 
   <!-- Page css files -->
-  <link rel="stylesheet" href="http://127.0.0.1:3000/css/base/plugins/forms/form-validation.css">
-  <link rel="stylesheet" href="http://127.0.0.1:3000/css/base/plugins/forms/form-wizard.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/plugins/forms/form-validation.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/plugins/forms/form-wizard.css">
 
 <!-- laravel style -->
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/overrides.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/overrides.css" />
 
 <!-- BEGIN: Custom CSS-->
 
   
-  <link rel="stylesheet" href="http://127.0.0.1:3000/css/style.css" />
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/style.css" />
+
+  <!-- BEGIN: Vendor CSS-->
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/vendors.min.css" />
+
+  <!-- vendor css files -->
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/file-uploaders/dropzone.min.css">
+<!-- END: Vendor CSS-->
+
+<!-- BEGIN: Theme CSS-->
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/core.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/dark-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/bordered-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/semi-dark-layout.css" />
+
+
+<!-- BEGIN: Page CSS-->
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/core/menu/menu-types/vertical-menu.css" />
+
+  <!-- Page css files -->
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/plugins/forms/form-file-uploader.css">
+
+<!-- laravel style -->
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/overrides.css" />
+
+<!-- BEGIN: Custom CSS-->
+
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/style.css" />
+
 
 </head>
 <!-- END: Head-->
@@ -67,7 +95,7 @@ data-open="click"
 data-menu="vertical-menu-modern"
 data-col="default"
 data-framework="laravel"
-data-asset-path="http://127.0.0.1:3000/">
+data-asset-path="http://127.0.0.1:8000/">
   <!-- BEGIN: Header-->
   
 <!-- END: Header-->
@@ -79,23 +107,28 @@ data-asset-path="http://127.0.0.1:3000/">
     <!-- END: Main Menu-->
 
   <!-- BEGIN: Content-->
-  <div class="app-content content ">
+  
+  <div class="app-content content" style="padding-top:62px;">
+
+  
     <!-- BEGIN: Header-->
     <div class="content-overlay"></div>
+    
     <div class="header-navbar-shadow"></div>
+    
 
         <div class="content-wrapper container-xxl p-0">
-      
-            <div class="content-header row">
+          
+        <div class="content-header row">
   <div class="content-header-left col-md-9 col-12 mb-2">
     <div class="row breadcrumbs-top">
       <div class="col-12">
-        <h2 class="content-header-title float-start mb-0">Form Wizard</h2>
+        <h2 class="content-header-title float-start mb-0">Tambah Kamar Yuk</h2>
         <div class="breadcrumb-wrapper">
                     <ol class="breadcrumb">
               
                             <li class="breadcrumb-item">
-                                    <a href="http://127.0.0.1:3000">
+                                    <a href="http://127.0.0.1:8000">
                                             Home
                                         </a>
                                 </li>
@@ -112,44 +145,38 @@ data-asset-path="http://127.0.0.1:3000/">
       </div>
     </div>
   </div>
-  <div class="content-header-right text-md-end col-md-3 col-12 d-md-block d-none">
-    <div class="mb-1 breadcrumb-right">
-      <div class="dropdown">
-        <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i data-feather="grid"></i>
-        </button>
-        <div class="dropdown-menu dropdown-menu-end">
-          <a class="dropdown-item" href="http://127.0.0.1:3000/app/todo">
-            <i class="me-1" data-feather="check-square"></i>
-            <span class="align-middle">Todo</span>
-          </a>
-          <a class="dropdown-item" href="http://127.0.0.1:3000/app/chat">
-            <i class="me-1" data-feather="message-square"></i>
-            <span class="align-middle">Chat</span>
-          </a>
-          <a class="dropdown-item" href="http://127.0.0.1:3000/app/email">
-            <i class="me-1" data-feather="mail"></i>
-            <span class="align-middle">Email</span>
-          </a>
-          <a class="dropdown-item" href="http://127.0.0.1:3000/app/calendar">
-            <i class="me-1" data-feather="calendar"></i>
-            <span class="align-middle">Calendar</span>
-          </a>
+
+
+
+
+        <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Use Button To Select Files</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Using this method, user gets an option to select the files using a button instead dropping all the files
+            after selected from the folders. Set <code>clickable</code> to match the button's id for button to work as
+            file selector.
+          </p>
+          <button id="select-files" class="btn btn-outline-primary mb-1">
+            <i data-feather="file"></i> Click me to select files
+          </button>
+          <form action="#" type="file"class="dropzone dropzone-area" id="dpz-btn-select-files">
+           
+            <div class="dz-message" style="cursor:pointer;">Drop files here or click button to upload.</div>
+          </form>
         </div>
       </div>
     </div>
-  </div>
-</div>
+      
       
       <div class="content-body">
         
-        <!-- Horizontal Wizard -->
+    
 
-<!-- /Horizontal Wizard -->
-
-<!-- Vertical Wizard -->
-
-<!-- /Vertical Wizard -->
 
 <!-- Modern Horizontal Wizard -->
   <section class="modern-horizontal-wizard">
@@ -209,7 +236,7 @@ data-asset-path="http://127.0.0.1:3000/">
           </button>
         </div>
       </div>
-      <div class="bs-stepper-content">
+      <div class="bs-stepper-content" style="height:400px;">
         <div id="account-details-modern" class="content" role="tabpanel" aria-labelledby="account-details-modern-trigger">
           <div class="content-header">
             <h5 class="mb-0">Account Details</h5>
@@ -387,6 +414,8 @@ data-asset-path="http://127.0.0.1:3000/">
       </div>
     </div>
 </section>
+
+
 <!-- /Modern Horizontal Wizard -->
 <!-- Modern Vertical Wizard -->
 <!-- /Modern Vertical Wizard -->
@@ -419,28 +448,50 @@ data-asset-path="http://127.0.0.1:3000/">
 
   
   <!-- BEGIN: Vendor JS-->
-<script src="http://127.0.0.1:3000/vendors/js/vendors.min.js"></script>
+<script src="http://127.0.0.1:8000/vendors/js/vendors.min.js"></script>
 <!-- BEGIN Vendor JS-->
 <!-- BEGIN: Page Vendor JS-->
-<script src="http://127.0.0.1:3000/vendors/js/ui/jquery.sticky.js"></script>
+<script src="http://127.0.0.1:8000/vendors/js/ui/jquery.sticky.js"></script>
   <!-- vendor files -->
-  <script src="http://127.0.0.1:3000/vendors/js/forms/wizard/bs-stepper.min.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/forms/select/select2.full.min.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/forms/validation/jquery.validate.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/forms/wizard/bs-stepper.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/forms/select/select2.full.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/forms/validation/jquery.validate.min.js"></script>
 <!-- END: Page Vendor JS-->
 <!-- BEGIN: Theme JS-->
-<script src="http://127.0.0.1:3000/js/core/app-menu.js"></script>
-<script src="http://127.0.0.1:3000/js/core/app.js"></script>
+<script src="http://127.0.0.1:8000/js/core/app-menu.js"></script>
+<script src="http://127.0.0.1:8000/js/core/app.js"></script>
 
 <!-- custome scripts file for user -->
-<script src="http://127.0.0.1:3000/js/core/scripts.js"></script>
+<script src="http://127.0.0.1:8000/js/core/scripts.js"></script>
 
-<script src="http://127.0.0.1:3000/js/scripts/customizer.js"></script>
+<script src="http://127.0.0.1:8000/js/scripts/customizer.js"></script>
 <!-- END: Theme JS-->
 <!-- BEGIN: Page JS-->
   <!-- Page js files -->
-  <script src="http://127.0.0.1:3000/js/scripts/forms/form-wizard.js"></script>
+  <script src="http://127.0.0.1:8000/js/scripts/forms/form-wizard.js"></script>
+
+  
 <!-- END: Page JS-->
+
+ 
+<!-- BEGIN Vendor JS-->
+<!-- BEGIN: Page Vendor JS-->
+<script src="http://127.0.0.1:8000/vendors/js/ui/jquery.sticky.js"></script>
+  <!-- vendor files -->
+  <script src="http://127.0.0.1:8000/vendors/js/file-uploaders/dropzone.min.js"></script>
+<!-- END: Page Vendor JS-->
+<!-- BEGIN: Theme JS-->
+<script src="http://127.0.0.1:8000/js/core/app-menu.js"></script>
+<script src="http://127.0.0.1:8000/js/core/app.js"></script>
+
+<!-- custome scripts file for user -->
+<script src="http://127.0.0.1:8000/js/core/scripts.js"></script>
+
+<script src="http://127.0.0.1:8000/js/scripts/customizer.js"></script>
+<!-- END: Theme JS-->
+<!-- BEGIN: Page JS-->
+  <!-- Page js files -->
+  <script src="http://127.0.0.1:8000/js/scripts/forms/form-file-uploader.js"></script>
 
   <script type="text/javascript">
     $(window).on('load', function() {
