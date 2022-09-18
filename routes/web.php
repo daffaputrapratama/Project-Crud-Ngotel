@@ -26,6 +26,10 @@ Route::get('/tambahKamar', function () {
     return view('pages.adminView.tambahKamar');
 });
 
+Route::get('/dataKamar', function () {
+    return view('pages.adminView.dataKamar');
+});
+
 Route::get('/loginView', function () {
     return view('pages.userView.loginView.loginView');
 });
