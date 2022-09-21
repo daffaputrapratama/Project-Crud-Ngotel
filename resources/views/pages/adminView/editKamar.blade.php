@@ -123,7 +123,7 @@ data-asset-path="http://127.0.0.1:8000/">
   <div class="content-header-left col-md-9 col-12 mb-2">
     <div class="row breadcrumbs-top">
       <div class="col-12">
-        <h2 class="content-header-title float-start mb-0">Tambah Kamar Yuk</h2>
+        <h2 class="content-header-title float-start mb-0">Edit Kamar</h2>
         <div class="breadcrumb-wrapper">
                     <ol class="breadcrumb">
               
@@ -238,7 +238,8 @@ data-asset-path="http://127.0.0.1:8000/">
       </div>
       <div class="bs-stepper-content" style="height:300px;">
         <div id="account-details-modern" class="content" role="tabpanel" aria-labelledby="account-details-modern-trigger">
-        <form action="/dataKamar/storeKamar" method="POST">
+        <form action="/dataKamar/{{$kamar->id}}" method="POST">
+        @method('PUT')
         @csrf
           <div class="content-header">
             <h5 class="mb-0">Detail Kamar</h5>
@@ -248,17 +249,17 @@ data-asset-path="http://127.0.0.1:8000/">
             <div class="mb-1 col-md-6">
               <label class="form-label" for="modern-kamar">Nama Kamar</label>
               <select class="form-select" aria-label="Nama Kamar" name="namaKamar">
-                <option value="Deluxe Room">Deluxe Room</option>
-                <option value="Superior Room">Superior Room</option>
-                <option value="Normal Room">Normal Room</option>
+                <option value="Deluxe Room" @if ($kamar->namaKamar == "Deluxe Room") selected @endif>Deluxe Room</option>
+                <option value="Superior Room" @if ($kamar->namaKamar == "Superior Room") selected @endif>Superior Room</option>
+                <option value="Normal Room" @if ($kamar->namaKamar == "Normal Room") selected @endif>Normal Room</option>
               </select>
             </div>
             <div class="mb-1 col-md-6">
               <label class="form-label" for="modern-fasilitas">Fasilitas Kamar</label>
               <select class="form-select" aria-label="Fasilitas" name="fasilitasKamar">
-                <option value="Shower, 2 Kasur, TV, Kulkas, 2 Lemari Besar, 4 Lemari Kecil, Wi-Fi">Shower, 2 Kasur, TV, Kulkas, 2 Lemari Besar, 4 Lemari Kecil, Wi-Fi</option>
-                <option value="Shower, 1 Kasur, TV, Kulkas, 4 Lemari Kecil, Wi-Fi">Shower, 1 Kasur, TV, Kulkas, 4 Lemari Kecil, Wi-Fi</option>
-                <option value="Shower, 1 Kasur, TV, 2 Lemari Kecil">Shower, 1 Kasur, TV, 2 Lemari Kecil</option>
+                <option value="Shower, 2 Kasur, TV, Kulkas, 2 Lemari Besar, 4 Lemari Kecil, Wi-Fi" @if ($kamar->fasilitasKamar == "Shower, 2 Kasur, TV, Kulkas, 2 Lemari Besar, 4 Lemari Kecil, Wi-Fi") selected @endif>Shower, 2 Kasur, TV, Kulkas, 2 Lemari Besar, 4 Lemari Kecil, Wi-Fi</option>
+                <option value="Shower, 1 Kasur, TV, Kulkas, 4 Lemari Kecil, Wi-Fi" @if ($kamar->fasilitasKamar == "Shower, 1 Kasur, TV, Kulkas, 4 Lemari Kecil, Wi-Fi") selected @endif>Shower, 1 Kasur, TV, Kulkas, 4 Lemari Kecil, Wi-Fi</option>
+                <option value="Shower, 1 Kasur, TV, 2 Lemari Kecil" @if ($kamar->fasilitasKamar == "Shower, 1 Kasur, TV, 2 Lemari Kecil") selected @endif>Shower, 1 Kasur, TV, 2 Lemari Kecil</option>
               </select>
             </div>
           </div>
@@ -266,17 +267,17 @@ data-asset-path="http://127.0.0.1:8000/">
             <div class="mb-1 col-md-6">
               <label class="form-label" for="modern-typeKamar">Type Kamar</label>
               <select class="form-select" aria-label="Kasur" name="typeKamar">
-                <option value="Single Bed">Single Bed</option>
-                <option value="Twin Bed">Twin Bed</option>
-                <option value="Master Bed">Master Bed</option>
+                <option value="Single Bed" @if ($kamar->typeKamar == "Single Bed") selected @endif>Single Bed</option>
+                <option value="Twin Bed" @if ($kamar->typeKamar == "Twin Bed") selected @endif>Twin Bed</option>
+                <option value="Master Bed" @if ($kamar->typeKamar == "Master Bed") selected @endif>Master Bed</option>
               </select>
             </div>
             <div class="mb-1 form-password-toggle col-md-6">
               <label class="form-label" for="modern-interior">Special Interior</label>
               <select class="form-select" aria-label="Interior" name="interiorKamar">
-                <option value="Diamond">Diamond</option>
-                <option value="Gold">Gold</option>
-                <option value="Crystal">Crystal</option>
+                <option value="Diamond" @if ($kamar->interiorKamar == "Diamond") selected @endif>Diamond</option>
+                <option value="Gold" @if ($kamar->interiorKamar == "Gold") selected @endif>Gold</option>
+                <option value="Crystal" @if ($kamar->interiorKamar == "Crystal") selected @endif>Crystal</option>
               </select>
             </div>
           </div>

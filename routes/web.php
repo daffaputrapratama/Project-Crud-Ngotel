@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KamarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,20 +22,21 @@ Route::get('/', function () {
     return view('layouts.main');
 });
 
+Route::get('/dataKamar',[KamarController::class,'tableKamar']);
+Route::get('/dataKamar/createKamar',[KamarController::class,'createKamar']);
+Route::post('/dataKamar/storeKamar',[KamarController::class,'storeKamar']);
+Route::get('/dataKamar/{id}/editKamar',[KamarController::class,'editKamar']);
+Route::put('/dataKamar/{id}',[KamarController::class,'updateKamar']);
+Route::delete('/dataKamar/{id}',[KamarController::class,'deleteKamar']);
 
-Route::get('/tambahKamar', function () {
-    return view('pages.adminView.tambahKamar');
-});
+Route::get('/receptionist',[KamarController::class,'receptionistTable']);
+Route::get('/List Kamar Hotel',[KamarController::class,'hotelUser']);
 
-Route::get('/dataKamar', function () {
-    return view('pages.adminView.dataKamar');
-});
+// Route::get('/loginView', function () {
+//     return view('pages.userView.loginView.loginView');
+// });
 
-Route::get('/loginView', function () {
-    return view('pages.userView.loginView.loginView');
-});
-
-Route::get('/registerView', function () {
-    return view('pages.userView.registerView.registerView');
-});
+// Route::get('/registerView', function () {
+//     return view('pages.userView.registerView.registerView');
+// });
 
