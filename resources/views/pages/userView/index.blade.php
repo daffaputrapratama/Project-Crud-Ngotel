@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
      <!-- Site Metas -->
-    <title>Yamifood Restaurant - Responsive HTML5 Template</title>  
+    <title>Anjay Hotel</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -30,6 +30,56 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+  <meta name="csrf-token" content="wFMIRrBE8ESaanvon6KA74PBCS7vUybUSZY6RuhW">
+  <meta name="description"
+    content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+  <meta name="keywords"
+    content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+  <meta name="author" content="PIXINVENT">
+  <title>Dashboard Analytics - Vuexy - Bootstrap HTML & Laravel admin template</title>
+  <link rel="apple-touch-icon" href="http://127.0.0.1:8000/images/ico/favicon-32x32.png">
+  <link rel="shortcut icon" type="image/x-icon" href="http://127.0.0.1:8000/images/logo/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
+    rel="stylesheet">
+
+  
+  <!-- BEGIN: Vendor CSS-->
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/vendors.min.css" />
+
+  <!-- vendor css files -->
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/charts/apexcharts.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/extensions/toastr.min.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
+<!-- END: Vendor CSS-->
+
+<!-- BEGIN: Theme CSS-->
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/core.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/dark-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/bordered-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/semi-dark-layout.css" />
+
+
+<!-- BEGIN: Page CSS-->
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/core/menu/menu-types/vertical-menu.css" />
+
+
+  <!-- Page css files -->
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/plugins/charts/chart-apex.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/plugins/extensions/ext-component-toastr.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/pages/app-invoice-list.css">
+  
+<!-- laravel style -->
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/overrides.css" />
+
+<!-- BEGIN: Custom CSS-->
+
+  
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/style.css" />
+
 
 </head>
 
@@ -37,47 +87,47 @@
 	<div id="slides" class="cover-slides">
 		<ul class="slides-container">
 			<li class="text-center">
-				<img src="../assets/images/slider-01.jpg" alt="" width="100%">
+				<img src="../assets/images/hotel1.png" alt="" width="100%">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
 							<h1 class="m-b-20"><strong>Welcome To <br> Our Hotel</strong></h1>
 							<p class="m-b-40">See how your users experience your website in realtime or view  <br> 
 							trends to see any changes in performance over time.</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#" id="btn">Reservation</a></p>
 						</div>
 					</div>
 				</div>
 			</li>
 			<li class="text-center">
-				<img src="../assets/images/slider-02.jpg" alt="" width="100%">
+				<img src="../assets/images/hotel2.png" alt="" width="100%">
 				<div class="container"> 
 					<div class="row">
 						<div class="col-md-12">
 							<h1 class="m-b-20"><strong>Welcome To <br> Our Hotel</strong></h1>
 							<p class="m-b-40">See how your users experience your website in realtime or view  <br> 
 							trends to see any changes in performance over time.</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#" id="btn">Reservation</a></p>
 						</div>
 					</div>
 				</div>
 			</li>
 			<li class="text-center">
-				<img src="../assets/images/slider-03.jpg" alt="" width="100%">
+				<img src="../assets/images/hotel3.jfif" alt="" width="100%">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
 							<h1 class="m-b-20"><strong>Welcome To <br> Our Hotel</strong></h1>
 							<p class="m-b-40">See how your users experience your website in realtime or view  <br> 
 							trends to see any changes in performance over time.</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#" id="btn">Reservation</a></p>
 						</div>
 					</div>
 				</div>
 			</li>
 		</ul>
 		<div class="slides-navigation">
-			<a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<a href="#" class="next" id><i class="fa fa-angle-right" aria-hidden="true"></i></a>
 			<a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
 		</div>
 	</div>
@@ -88,12 +138,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12">
-					<img src="../assets/images/about-img.jpg" alt="" class="img-fluid">
+					<img src="../assets/images/gallery1000.png" alt="" class="img-fluid">
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 text-center">
 					<div class="inner-column">
-						<h1>Welcome To <span>Yamifood Restaurant</span></h1>
-						<h4>Little Story</h4>
+						<h1>Welcome To <span>Our Hotel</span></h1>
+						<h4>About Us</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
 						<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem, a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.</p>
 						<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a>
@@ -125,7 +175,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="heading-title text-center">
-						<h2>Special Menu</h2>
+						<h2>Room Category</h2>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
 					</div>
 				</div>
@@ -135,9 +185,9 @@
 					<div class="special-menu text-center">
 						<div class="button-group filter-button-group">
 							<button class="active" data-filter="*">All</button>
-							<button data-filter=".drinks">Drinks</button>
-							<button data-filter=".lunch">Lunch</button>
-							<button data-filter=".dinner">Dinner</button>
+							<button data-filter=".drinks">Normal</button>
+							<button data-filter=".lunch">Deluxe</button>
+							<button data-filter=".dinner">Superior</button>
 						</div>
 					</div>
 				</div>
@@ -146,9 +196,9 @@
 			<div class="row special-list">
 				<div class="col-lg-4 col-md-6 special-grid drinks">
 					<div class="gallery-single fix">
-						<img src="../assets/images/img-01.jpg" class="img-fluid" alt="Image">
+						<img src="../assets/images/nb1.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Drinks 1</h4>
+							<h4>Normal Room</h4>
 							<p>Sed id magna vitae eros sagittis euismod.</p>
 							<h5> $7.79</h5>
 						</div>
@@ -157,9 +207,9 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid drinks">
 					<div class="gallery-single fix">
-						<img src="../assets/images/img-02.jpg" class="img-fluid" alt="Image">
+						<img src="../assets/images/nb2.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Drinks 2</h4>
+							<h4>Normal Room</h4>
 							<p>Sed id magna vitae eros sagittis euismod.</p>
 							<h5> $9.79</h5>
 						</div>
@@ -168,9 +218,9 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid drinks">
 					<div class="gallery-single fix">
-						<img src="../assets/images/img-03.jpg" class="img-fluid" alt="Image">
+						<img src="../assets/images/nb3.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Drinks 3</h4>
+							<h4>Normal Room</h4>
 							<p>Sed id magna vitae eros sagittis euismod.</p>
 							<h5> $10.79</h5>
 						</div>
@@ -179,9 +229,9 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid lunch">
 					<div class="gallery-single fix">
-						<img src="../assets/images/img-04.jpg" class="img-fluid" alt="Image">
+						<img src="../assets/images/db1.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Lunch 1</h4>
+							<h4>Deluxe Room</h4>
 							<p>Sed id magna vitae eros sagittis euismod.</p>
 							<h5> $15.79</h5>
 						</div>
@@ -190,9 +240,9 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid lunch">
 					<div class="gallery-single fix">
-						<img src="../assets/images/img-05.jpg" class="img-fluid" alt="Image">
+						<img src="../assets/images/db2.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Lunch 2</h4>
+							<h4>Deluxe Room</h4>
 							<p>Sed id magna vitae eros sagittis euismod.</p>
 							<h5> $18.79</h5>
 						</div>
@@ -201,9 +251,9 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid lunch">
 					<div class="gallery-single fix">
-						<img src="../assets/images/img-06.jpg" class="img-fluid" alt="Image">
+						<img src="../assets/images/db3.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Lunch 3</h4>
+							<h4>Deluxe Room</h4>
 							<p>Sed id magna vitae eros sagittis euismod.</p>
 							<h5> $20.79</h5>
 						</div>
@@ -212,9 +262,9 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid dinner">
 					<div class="gallery-single fix">
-						<img src="../assets/images/img-07.jpg" class="img-fluid" alt="Image">
+						<img src="../assets/images/sb1.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Dinner 1</h4>
+							<h4>Superior Room</h4>
 							<p>Sed id magna vitae eros sagittis euismod.</p>
 							<h5> $25.79</h5>
 						</div>
@@ -223,9 +273,9 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid dinner">
 					<div class="gallery-single fix">
-						<img src="../assets/images/img-08.jpg" class="img-fluid" alt="Image">
+						<img src="../assets/images/sb2.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Dinner 2</h4>
+							<h4>Superior Room</h4>
 							<p>Sed id magna vitae eros sagittis euismod.</p>
 							<h5> $22.79</h5>
 						</div>
@@ -234,9 +284,9 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid dinner">
 					<div class="gallery-single fix">
-						<img src="../assets/images/img-09.jpg" class="img-fluid" alt="Image">
+						<img src="../assets/images/sb3.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Dinner 3</h4>
+							<h4>Superior Room</h4>
 							<p>Sed id magna vitae eros sagittis euismod.</p>
 							<h5> $24.79</h5>
 						</div>
@@ -261,35 +311,23 @@
 			</div>
 			<div class="tz-gallery">
 				<div class="row">
-					<div class="col-sm-12 col-md-4 col-lg-4">
-						<a class="lightbox" href="../assets/images/gallery-img-01.jpg">
-							<img class="img-fluid" src="../assets/images/gallery-img-01.jpg" alt="Gallery Images">
-						</a>
+					<div class="col-sm-12 col-md-4 col-lg-4">					
+							<img class="img-fluid" src="../assets/images/gallery200.jpg" alt="Gallery Images" id="hal">					
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4">				
+							<img class="img-fluid" src="../assets/images/gallery6.jpg" alt="Gallery Images" id="hal">					
 					</div>
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="../assets/images/gallery-img-02.jpg">
-							<img class="img-fluid" src="../assets/images/gallery-img-02.jpg" alt="Gallery Images">
-						</a>
+							<img class="img-fluid" src="../assets/images/gallery4.jpg" alt="Gallery Images" id="hal">						
+					</div>
+					<div class="col-sm-12 col-md-4 col-lg-4">		
+							<img class="img-fluid" src="../assets/images/gallery7.jpg" alt="Gallery Images" id="hal">
 					</div>
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="../assets/images/gallery-img-03.jpg">
-							<img class="img-fluid" src="../assets/images/gallery-img-03.jpg" alt="Gallery Images">
-						</a>
-					</div>
-					<div class="col-sm-12 col-md-4 col-lg-4">
-						<a class="lightbox" href="../assets/images/gallery-img-04.jpg">
-							<img class="img-fluid" src="../assets/images/gallery-img-04.jpg" alt="Gallery Images">
-						</a>
-					</div>
-					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="../assets/images/gallery-img-05.jpg">
-							<img class="img-fluid" src="../assets/images/gallery-img-05.jpg" alt="Gallery Images">
-						</a>
+							<img class="img-fluid" src="../assets/images/gallery10.jpg" alt="Gallery Images" id="hal">
 					</div> 
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="../assets/images/gallery-img-06.jpg">
-							<img class="img-fluid" src="../assets/images/gallery-img-06.jpg" alt="Gallery Images">
-						</a>
+							<img class="img-fluid" src="../assets/images/gallery100.jpg" alt="Gallery Images" id="hal">
 					</div>
 				</div>
 			</div>
@@ -316,7 +354,7 @@
 								<div class="img-box p-1 border rounded-circle m-auto">
 									<img class="d-block w-100 rounded-circle" src="../assets/images/profile-1.jpg" alt="">
 								</div>
-								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Paul Mitchel</strong></h5>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase" id="nama">Paul Mitchel</strong></h5>
 								<h6 class="text-dark m-0">Web Developer</h6>
 								<p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
 							</div>
@@ -324,7 +362,7 @@
 								<div class="img-box p-1 border rounded-circle m-auto">
 									<img class="d-block w-100 rounded-circle" src="../assets/images/profile-3.jpg" alt="">
 								</div>
-								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Steve Fonsi</strong></h5>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase" id="nama">Steve Fonsi</strong></h5>
 								<h6 class="text-dark m-0">Web Designer</h6>
 								<p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
 							</div>
@@ -332,7 +370,7 @@
 								<div class="img-box p-1 border rounded-circle m-auto">
 									<img class="d-block w-100 rounded-circle" src="../assets/images/profile-7.jpg" alt="">
 								</div>
-								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Daniel vebar</strong></h5>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase" id="nama">Daniel vebar</strong></h5>
 								<h6 class="text-dark m-0">Seo Analyst</h6>
 								<p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
 							</div>
