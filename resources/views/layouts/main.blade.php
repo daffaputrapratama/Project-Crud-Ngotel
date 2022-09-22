@@ -55,6 +55,21 @@
   
   <link rel="stylesheet" href="http://127.0.0.1:8000/css/style.css" />
 
+  {{-- css index --}}
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/custom.css"> 
+
+    <!--[if lt IE 9]
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 <!-- END: Head-->
 
@@ -84,13 +99,13 @@ data-asset-path="http://127.0.0.1:8000/">
     <div class="content-overlay"></div>
     <div class="header-navbar-shadow"></div>
 
-        <div class="content-wrapper container-xxl p-0">
-      
+    <div class="content-wrapper container-xxl p-0">
+      @yield('Index')
    <!-- Content Body Start -->
         <!-- Content Body Start -->
       <div class="content-body">
       
-     
+      
       @yield('tambahKamar')
       @yield('dataKamar')
 
@@ -115,6 +130,21 @@ data-asset-path="http://127.0.0.1:8000/">
   <!-- BEGIN: Vendor JS-->
 <script src="http://127.0.0.1:8000/vendors/js/vendors.min.js"></script>
 <!-- BEGIN Vendor JS-->
+
+{{-- js guweh --}}
+<!-- ALL JS FILES -->
+<script src="../assets/js/jquery-3.2.1.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+  <!-- ALL PLUGINS -->
+<script src="../assets/js/jquery.superslides.min.js"></script>
+<script src="../assets/js/images-loded.min.js"></script>
+<script src="../assets/js/isotope.min.js"></script>
+<script src="../assets/js/baguetteBox.min.js"></script>
+<script src="../assets/js/form-validator.min.js"></script>
+  <script src="../assets/js/contact-form-script.js"></script>
+  <script src="../assets/js/custom.js"></script>
+
 <!-- BEGIN: Page Vendor JS-->
 <script src="http://127.0.0.1:8000/vendors/js/ui/jquery.sticky.js"></script>
   <!-- vendor files -->

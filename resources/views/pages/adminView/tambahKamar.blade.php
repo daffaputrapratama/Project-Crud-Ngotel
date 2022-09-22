@@ -188,12 +188,12 @@ data-asset-path="http://127.0.0.1:8000/">
               <i data-feather="file-text" class="font-medium-3"></i>
             </span>
             <span class="bs-stepper-label">
-              <span class="bs-stepper-title">Account Details</span>
-              <span class="bs-stepper-subtitle">Setup Account Details</span>
+              <span class="bs-stepper-title">Formulir Data Kamar</span>
+              <span class="bs-stepper-subtitle">Setup Kamar Details</span>
             </span>
           </button>
         </div>
-        <div class="line">
+        <!-- <div class="line">
           <i data-feather="chevron-right" class="font-medium-2"></i>
         </div>
         <div class="step" data-target="#personal-info-modern" role="tab" id="personal-info-modern-trigger">
@@ -234,57 +234,57 @@ data-asset-path="http://127.0.0.1:8000/">
               <span class="bs-stepper-subtitle">Add Social Links</span>
             </span>
           </button>
-        </div>
+        </div> -->
       </div>
-      <div class="bs-stepper-content" style="height:400px;">
+      <div class="bs-stepper-content" style="height:300px;">
         <div id="account-details-modern" class="content" role="tabpanel" aria-labelledby="account-details-modern-trigger">
           <div class="content-header">
-            <h5 class="mb-0">Account Details</h5>
-            <small class="text-muted">Enter Your Account Details.</small>
+            <h5 class="mb-0">Detail Kamar</h5>
+            <small class="text-muted">Masukan Spesifikasi Kamar</small>
           </div>
           <div class="row">
             <div class="mb-1 col-md-6">
-              <label class="form-label" for="modern-username">Username</label>
-              <input type="text" id="modern-username" class="form-control" placeholder="johndoe" />
+              <label class="form-label" for="modern-kamar">Nama Kamar</label>
+              <select class="form-select" aria-label="Nama Kamar">
+                <option value="DeluxeRoom">Deluxe Room</option>
+                <option value="SuperiorRoom">Superior Room</option>
+                <option value="NormalRoom">Normal Room</option>
+              </select>
             </div>
             <div class="mb-1 col-md-6">
-              <label class="form-label" for="modern-email">Email</label>
-              <input
-                type="email"
-                id="modern-email"
-                class="form-control"
-                placeholder="john.doe@email.com"
-                aria-label="john.doe"
-              />
+              <label class="form-label" for="modern-fasilitas">Fasilitas Kamar</label>
+              <select class="form-select" aria-label="Fasilitas">
+                <option value="Fasil1">Shower, 2 Kasur, TV, Kulkas, 2 Lemari Besar, 4 Lemari Kecil, Wi-Fi</option>
+                <option value="Fasil2">Shower, 1 Kasur, TV, Kulkas, 4 Lemari Kecil, Wi-Fi</option>
+                <option value="Fasil3">Shower, 1 Kasur, TV, 2 Lemari Kecil</option>
+              </select>
             </div>
           </div>
           <div class="row">
-            <div class="mb-1 form-password-toggle col-md-6">
-              <label class="form-label" for="modern-password">Password</label>
-              <input
-                type="password"
-                id="modern-password"
-                class="form-control"
-                placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
-              />
+            <div class="mb-1 col-md-6">
+              <label class="form-label" for="modern-typeKamar">Type Kamar</label>
+              <select class="form-select" aria-label="Kasur">
+                <option value="SingleBed">Single Bed</option>
+                <option value="TwinBed">Twin Bed</option>
+                <option value="MasterBed">Master Bed</option>
+              </select>
             </div>
             <div class="mb-1 form-password-toggle col-md-6">
-              <label class="form-label" for="modern-confirm-password">Confirm Password</label>
-              <input
-                type="password"
-                id="modern-confirm-password"
-                class="form-control"
-                placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
-              />
+              <label class="form-label" for="modern-interior">Special Interior</label>
+              <select class="form-select" aria-label="Interior">
+                <option value="SingleBed">Diamond</option>
+                <option value="TwinBed">Gold</option>
+                <option value="MasterBed">Crystal</option>
+              </select>
             </div>
           </div>
-          <div class="d-flex justify-content-between">
-            <button class="btn btn-outline-secondary btn-prev" disabled>
+          <div class="d-flex justify-content-end mt-2">
+            <!-- <button class="btn btn-outline-secondary btn-prev" disabled>
               <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
               <span class="align-middle d-sm-inline-block d-none">Previous</span>
-            </button>
-            <button class="btn btn-primary btn-next">
-              <span class="align-middle d-sm-inline-block d-none">Next</span>
+            </button> -->
+            <button class="btn btn-primary">
+              <span class="align-middle d-sm-inline-block d-none">Submit</span>
               <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
             </button>
           </div>
@@ -327,10 +327,10 @@ data-asset-path="http://127.0.0.1:8000/">
             </div>
           </div>
           <div class="d-flex justify-content-between">
-            <button class="btn btn-primary btn-prev">
+            <!-- <button class="btn btn-primary btn-prev">
               <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
               <span class="align-middle d-sm-inline-block d-none">Previous</span>
-            </button>
+            </button> -->
             <button class="btn btn-primary btn-next">
               <span class="align-middle d-sm-inline-block d-none">Next</span>
               <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>

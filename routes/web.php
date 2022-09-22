@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KamarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,20 +22,20 @@ Route::get('/', function () {
     return view('layouts.main');
 });
 
-
-Route::get('/tambahKamar', function () {
-    return view('pages.adminView.tambahKamar');
+Route::get('/index', function () {
+    return view('pages.userView.index');
 });
 
-Route::get('/dataKamar', function () {
-    return view('pages.adminView.dataKamar');
-});
 
-Route::get('/loginView', function () {
-    return view('pages.userView.loginView.loginView');
-});
+Route::resource('/tambahKamar', \App\Http\Controllers\KamarController::class);
 
-Route::get('/registerView', function () {
-    return view('pages.userView.registerView.registerView');
-});
+Route::resource('/dataKamar', \App\Http\Controllers\KamarController::class);
+
+// Route::get('/loginView', function () {
+//     return view('pages.userView.loginView.loginView');
+// });
+
+// Route::get('/registerView', function () {
+//     return view('pages.userView.registerView.registerView');
+// });
 
