@@ -133,8 +133,8 @@ data-asset-path="http://127.0.0.1:8000/">
                                         </a>
                                 </li>
                             <li class="breadcrumb-item">
-                                    <a href="javascript:void(0)">
-                                            Admin
+                                    <a href="/receptionist">
+                                            Receptionist
                                         </a>
                                 </li>
                             <li class="breadcrumb-item">
@@ -156,6 +156,10 @@ data-asset-path="http://127.0.0.1:8000/">
           <h1 class="card-title">Use Button To Select Files</h1>
         </div>
         <div class="card-body">
+          <form action="/receptionist/search" method="GET">
+            @csrf
+              <input type="search" name="search" class="form-control" placeholder="Cari Data...">
+        </form> 
         <table class="table">
             <thead>
               <tr>

@@ -28,7 +28,14 @@ class KamarController extends Controller
 
     public function storeKamar(Request $request){
         // dd($request->except(['_token']));
-        Kamar::create($request->except(['_token']));
+        $kamar = Kamar::create($request->except(['_token']));
+
+        if($request->hasFile('foto')){
+            $request->file('foto')->move('public/images/hotel/'. $request->file('foto')->getClientOriginalName());
+            $kamar->foto = $request->file('foto')->getClientOriginalName();
+            $kamar->save();
+        }
+        
         return redirect('/dataKamar');
     }
 
@@ -49,5 +56,22 @@ class KamarController extends Controller
         $kamar= Kamar::find($id);
         $kamar->delete();
         return redirect('/dataKamar');
+    }
+    public function search(Request $request){
+        $searchResult = $request->search;
+        $result=Kamar::where('namaKamar','LIKE','%' .$searchResult. '%' )->paginate();
+        return view('pages.adminView.kamarTable', ['kamar' => $result]);
+    }
+
+    public function receptionistSearch(Request $request){
+        $searchResult = $request->search;
+        $result=Kamar::where('namaKamar','LIKE','%' .$searchResult. '%' )->paginate();
+        return view('pages.receptionistView.kamarTable', ['kamar' => $result]);
+    }
+
+    public function listSearch(Request $request){
+        $searchResult = $request->search;
+        $result=Kamar::where('namaKamar','LIKE','%' .$searchResult. '%' )->paginate();
+        return view('pages.userView.testView.listKamar', ['kamar' => $result]);
     }
 }

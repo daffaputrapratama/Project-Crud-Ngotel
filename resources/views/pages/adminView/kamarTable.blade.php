@@ -152,11 +152,15 @@ data-asset-path="http://127.0.0.1:8000/">
         <div class="row">
     <div class="col-12">
       <div class="card">
-        <div class="card-header">
-          <h1 class="card-title">Use Button To Select Files</h1>
-        </div>
         <div class="card-body">
-        <a href="/dataKamar/createKamar" class="btn btn-warning mb-2">Tambah Kamar</a>
+          <div class="d-flex">
+            <a href="/dataKamar/createKamar" class="btn btn-warning mb-2" style="margin-right: 20px;">Tambah Kamar</a>
+            <form action="/dataKamar/search" method="GET">
+              @csrf
+                <input type="search" name="search" class="form-control"placeholder="Cari Data..."  class="form-control">
+          </form> 
+          </div>
+        
         <table class="table">
             <thead>
               <tr>
@@ -165,6 +169,7 @@ data-asset-path="http://127.0.0.1:8000/">
                 <th scope="col">Type Kamar</th>
                 <th scope="col">Fasilitas Kamar</th>
                 <th scope="col">Interior Kamar</th>
+                <th scope="col">foto</th>
                 <th scope="col">Aksi</th>
               </tr>
             </thead>
@@ -177,18 +182,24 @@ data-asset-path="http://127.0.0.1:8000/">
                 <td>{{$data->typeKamar}}</td>
                 <td>{{$data->fasilitasKamar}}</td>
                 <td>{{$data->interiorKamar}}</td>
+                <td><img src="../images/{{$data->foto}}" style="height: 100px; width: 150px;"></td>
                 <td>
-                <div class="d-flex justify-content-center flex-column">
-                <a href="/dataKamar/{{$data->id}}/editKamar" class="btn btn-warning" style="width:50px;margin-bottom:10px;">EDIT</a>
-                <form action="/dataKamar/{{$data->id}}" method="POST">
-                  @csrf
-                  @method('DELETE')
-                  <button type="submit" class="btn btn-danger" style="width:50px">HAPUS</button>
-                </form>
-                </div>
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-sm dropdown-toggle hide-arrow py-0" data-bs-toggle="dropdown">
+                        <i data-feather="more-vertical"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-end" style="width:80px">
+                        <a href="/dataKamar/{{$data->id}}/editKamar" class="dropdown-item">Edit</a>
+                        <form action="/dataKamar/{{$data->id}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <a type="submit" class="dropdown-item">Hapus</button>
+                        </form>
+                      </div>
                 </td>
               </tr>
             @endforeach
+            {{-- {{asset('public/images/'.$data->foto) }} --}}
             </tbody>
           </table>
         </div>

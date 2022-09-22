@@ -236,7 +236,7 @@ data-asset-path="http://127.0.0.1:8000/">
           </button>
         </div> -->
       </div>
-      <div class="bs-stepper-content" style="height:300px;">
+      <div class="bs-stepper-content" style="height:400px;">
         <div id="account-details-modern" class="content" role="tabpanel" aria-labelledby="account-details-modern-trigger">
         <form action="/dataKamar/{{$kamar->id}}" method="POST">
         @method('PUT')
@@ -279,6 +279,10 @@ data-asset-path="http://127.0.0.1:8000/">
                 <option value="Gold" @if ($kamar->interiorKamar == "Gold") selected @endif>Gold</option>
                 <option value="Crystal" @if ($kamar->interiorKamar == "Crystal") selected @endif>Crystal</option>
               </select>
+            </div>
+            <div class="mb-3">
+              <label for="formFile" class="form-label">Masukan Foto</label>
+              <input class="form-control" type="file" id="formFile" name="foto" value="{{$kamar->foto}}">
             </div>
           </div>
           <div class="d-flex justify-content-end mt-2">

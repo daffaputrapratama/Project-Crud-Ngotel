@@ -31,6 +31,10 @@ Route::delete('/dataKamar/{id}',[KamarController::class,'deleteKamar']);
 
 Route::get('/receptionist',[KamarController::class,'receptionistTable']);
 Route::get('/List Kamar Hotel',[KamarController::class,'hotelUser']);
+Route::get('/dataKamar/search',[KamarController::class,'search']);
+Route::get('/receptionist/search',[KamarController::class,'receptionistSearch']);
+Route::get('/List Kamar Hotel/search',[KamarController::class,'listSearch']);
+
 
 // Route::get('/loginView', function () {
 //     return view('pages.userView.loginView.loginView');
