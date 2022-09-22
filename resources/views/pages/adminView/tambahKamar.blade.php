@@ -248,12 +248,6 @@ data-asset-path="http://127.0.0.1:8000/">
             <div class="mb-1 col-md-6">
               <label class="form-label" for="modern-username">Nama</label>
               <input type="text" id="modern-username" class="form-control" placeholder="johndoe" />
-              <label class="form-label" for="modern-kamar">Nama Kamar</label>
-              <select class="form-select" aria-label="Nama Kamar" name="namaKamar">
-                <option value="Deluxe Room">Deluxe Room</option>
-                <option value="Superior Room">Superior Room</option>
-                <option value="Normal Room">Normal Room</option>
-              </select>
             </div>
             <div class="mb-1 col-md-6">
               <label class="form-label" for="modern-fasilitas">Fasilitas Kamar</label>
