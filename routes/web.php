@@ -49,6 +49,16 @@ Route::get('/dataRegister', function () {
     return view('pages.adminView.dataRegister');
 });
 
+Route::get('/profileView', function () {
+    return view('pages.userView.profileView.profileView');
+});
+
+
+Route::get('/changeprofileView', function () {
+    return view('pages.userView.profileView.changeprofileView');
+});
+
+
 Route::get('/dataRegister', [regController::class, 'dataRegister']);
 
 Route::get('/dash', function () {

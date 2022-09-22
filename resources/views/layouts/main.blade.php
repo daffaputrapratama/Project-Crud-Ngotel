@@ -95,6 +95,8 @@ data-asset-path="http://127.0.0.1:8000/">
       @yield('dataKamar')
       @yield('dataRegister')
       @yield('dash')
+      @yield('userView')
+      @yield('changeuserView')
 
       </div>
       <!-- Content Body Start -->

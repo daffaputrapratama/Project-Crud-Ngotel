@@ -104,7 +104,10 @@
             <div class="list-item-body flex-grow-1">
               <i class="ficon cart-item-remove" data-feather="x"></i>
               <div class="media-heading">
-                <h6 class="cart-item-title"><a class="text-body" href="http://127.0.0.1:8000/app/ecommerce/details">
+                <h6 class="cart-item-title"><a class="text-body" href="http://127.0.0.1:8000/app/
+                
+                
+                /details">
                     Google
                     Home Mini</a></h6><small class="cart-item-by">By Google</small>
               </div>
@@ -304,8 +307,7 @@
       <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
         <h6 class="dropdown-header">Manage Profile</h6>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item"
-          href="javascript:void(0)">
+        <a class="dropdown-item" href="/profileView">
           <i class="me-50" data-feather="user"></i> Profile
         </a>
                 <a class="dropdown-item" href="#">

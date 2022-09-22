@@ -164,7 +164,7 @@
 <script src="http://127.0.0.1:3000/js/core/app.js"></script>
 
 <!-- custome scripts file for user -->
-<script src="http://127.0.0.1:3000/js/core/scripts.js"></script>
+<script src="http://127.0.0.1:8000/js/core/scripts.js"></script>
 
 <!-- END: Theme JS-->
 <!-- BEGIN: Page JS-->

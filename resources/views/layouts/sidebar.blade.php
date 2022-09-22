@@ -82,19 +82,19 @@
                                         
                         <li
               class="nav-item  ">
-              <a href="http://127.0.0.1:8000/app/email" class="d-flex align-items-center"
+              <a href="/dataRegister" class="d-flex align-items-center"
                 target="_self">
                 <i data-feather="mail"></i>
-                <span class="menu-title text-truncate">Email</span>
+                <span class="menu-title text-truncate">Data User</span>
                               </a>
                           </li>
                                         
                         <li
               class="nav-item  ">
-              <a href="http://127.0.0.1:8000/app/chat" class="d-flex align-items-center"
+              <a href="/dataKamar" class="d-flex align-items-center"
                 target="_self">
                 <i data-feather="message-square"></i>
-                <span class="menu-title text-truncate">Chat</span>
+                <span class="menu-title text-truncate">Data Kamar</span>
                               </a>
                           </li>
                                         
