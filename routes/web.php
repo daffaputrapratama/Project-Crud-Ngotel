@@ -55,6 +55,14 @@ Route::get('/dataRegister', function () {
     return view('pages.adminView.dataRegister');
 });
 
+Route::get('/tambahKamar', function () {
+    return view('pages.adminView.tambahKamar');
+});
+
+Route::get('/hotelView', function () {
+    return view('pages.userView.hotelView.hotelView');
+});
+
 Route::get('/profileView', function () {
     return view('pages.userView.profileView.profileView');
 });
