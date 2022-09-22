@@ -140,19 +140,20 @@
       <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
         <h2 class="card-title fw-bold mb-1">Adventure starts here 🚀</h2>
         <p class="card-text mb-2">Make your app management easy and fun!</p>
-        <form class="auth-register-form mt-2" action="/" method="GET">
+        <form class="auth-register-form mt-2" action="/register" method="POST">
+          @csrf
           <div class="mb-1">
-            <label class="form-label" for="register-username">Username</label>
-            <input class="form-control" id="register-username" type="text" name="register-username" placeholder="johndoe" aria-describedby="register-username" autofocus="" tabindex="1" />
+            <label class="form-label" for="register-username" name="name">Name</label>
+            <input class="form-control" id="register-username" type="text" name="name" placeholder="johndoe" aria-describedby="register-username" autofocus="" tabindex="1" />
           </div>
           <div class="mb-1">
             <label class="form-label" for="register-email">Email</label>
-            <input class="form-control" id="register-email" type="text" name="register-email" placeholder="john@example.com" aria-describedby="register-email" tabindex="2" />
+            <input class="form-control" id="register-email" type="text" name="email" placeholder="john@example.com" aria-describedby="register-email" tabindex="2" />
           </div>
           <div class="mb-1">
             <label class="form-label" for="register-password">Password</label>
             <div class="input-group input-group-merge form-password-toggle">
-              <input class="form-control form-control-merge" id="register-password" type="password" name="register-password" placeholder="············" aria-describedby="register-password" tabindex="3" />
+              <input class="form-control form-control-merge" id="register-password" type="password" name="password" placeholder="············" aria-describedby="register-password" tabindex="3" />
               <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
             </div>
           </div>
@@ -166,7 +167,7 @@
         </form>
         <p class="text-center mt-2">
           <span>Already have an account?</span>
-          <a href="http://127.0.0.1:8000/auth/login-cover"><span>&nbsp;Sign in instead</span></a>
+          <a href="/loginView"><span>&nbsp;Login instead</span></a>
         </p>
         <div class="divider my-2">
           <div class="divider-text">or</div>

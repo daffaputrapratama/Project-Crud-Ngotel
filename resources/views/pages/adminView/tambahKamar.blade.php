@@ -244,7 +244,7 @@ data-asset-path="http://127.0.0.1:8000/">
           </div>
           <div class="row">
             <div class="mb-1 col-md-6">
-              <label class="form-label" for="modern-username">Username</label>
+              <label class="form-label" for="modern-username">Nama</label>
               <input type="text" id="modern-username" class="form-control" placeholder="johndoe" />
             </div>
             <div class="mb-1 col-md-6">

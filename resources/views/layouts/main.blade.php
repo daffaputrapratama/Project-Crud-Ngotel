@@ -93,6 +93,8 @@ data-asset-path="http://127.0.0.1:8000/">
      
       @yield('tambahKamar')
       @yield('dataKamar')
+      @yield('dataRegister')
+      @yield('dash')
 
       </div>
       <!-- Content Body Start -->
