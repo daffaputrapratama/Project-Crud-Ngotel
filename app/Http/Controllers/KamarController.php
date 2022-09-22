@@ -44,12 +44,25 @@ class KamarController extends Controller
         // dd($kamar);
         return view('pages.adminView.editKamar', compact(['kamar']));
     }
+    
+    public function editKamarStatus($id){
+        $kamar = Kamar::find($id);
+        // dd($kamar);
+        return view('pages.receptionistView.editKamar', compact(['kamar']));
+    }
 
     public function updateKamar($id,Request $request){
         $kamar = Kamar::find($id);
 
         $kamar->update($request->except(['_token']));
         return redirect('/dataKamar');
+    }
+
+    public function updateKamarStatus($id,Request $request){
+        $kamar = Kamar::find($id);
+
+        $kamar->update($request->except(['_token']));
+        return redirect('/receptionist');
     }
 
     public function deleteKamar($id){

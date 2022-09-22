@@ -26,7 +26,9 @@ Route::get('/dataKamar',[KamarController::class,'tableKamar']);
 Route::get('/dataKamar/createKamar',[KamarController::class,'createKamar']);
 Route::post('/dataKamar/storeKamar',[KamarController::class,'storeKamar']);
 Route::get('/dataKamar/{id}/editKamar',[KamarController::class,'editKamar']);
+Route::get('/receptionist/{id}/editKamar',[KamarController::class,'editKamarStatus']);
 Route::put('/dataKamar/{id}',[KamarController::class,'updateKamar']);
+Route::put('/receptionist/{id}',[KamarController::class,'updateList']);
 Route::delete('/dataKamar/{id}',[KamarController::class,'deleteKamar']);
 
 Route::get('/receptionist',[KamarController::class,'receptionistTable']);

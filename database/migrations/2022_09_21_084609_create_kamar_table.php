@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('fasilitasKamar');
             $table->string('interiorKamar');
             $table->string('foto');
+            $table->string('status');
+            $table->date('date');
             $table->timestamps();
         });
     }
