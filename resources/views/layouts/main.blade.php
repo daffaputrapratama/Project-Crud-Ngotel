@@ -98,6 +98,7 @@ data-asset-path="http://127.0.0.1:8000/">
       @yield('userView')
       @yield('changeuserView')
       @yield('hotelView')
+      @yield('invoiceView')
 
       </div>
       <!-- Content Body Start -->

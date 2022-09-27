@@ -59,8 +59,12 @@ Route::get('/tambahKamar', function () {
     return view('pages.adminView.tambahKamar');
 });
 
-Route::get('/hotelView', function () {
-    return view('pages.userView.hotelView.hotelView');
+Route::get('/bookView', function () {
+    return view('pages.userView.bookView.bookView');
+});
+
+Route::get('/invoiceView', function () {
+    return view('pages.userView.bookView.invoiceView');
 });
 
 Route::get('/profileView', function () {
