@@ -5,6 +5,7 @@ use App\Http\Controllers\regController;
 use App\Http\Controllers\logController;
 use App\Http\Controllers\KamarController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -50,47 +51,27 @@ Route::get('/loginView', function () {
     return view('pages.userView.loginView.loginView');
 });
 
-
 Route::get('/dataRegister', function () {
     return view('pages.adminView.dataRegister');
 });
 
-Route::get('/tambahKamar', function () {
-    return view('pages.adminView.tambahKamar');
-});
-
-Route::get('/bookView', function () {
-    return view('pages.userView.bookView.bookView');
-});
-
-Route::get('/invoiceView', function () {
-    return view('pages.userView.bookView.invoiceView');
-});
-
-Route::get('/profileView', function () {
-    return view('pages.userView.profileView.profileView');
+Route::get('/index', function () {
+    return view('pages.userView.index');
 });
 
 
-Route::get('/changeprofileView', function () {
-    return view('pages.userView.profileView.changeprofileView');
-});
+Route::resource('/tambahKamar', \App\Http\Controllers\KamarController::class);
+
+Route::resource('/dataKamar', \App\Http\Controllers\KamarController::class);
+
+// Route::get('/dash', function () {
+//     return view('pages.adminView.dash');
+// });
 
 
-Route::get('/dataRegister', [regController::class, 'dataRegister']);
-
-Route::get('/dash', function () {
-    return view('pages.adminView.dash');
-});
-
-Route::get('/dash', function () {
-    return view('pages.adminView.dash');
-});
-
-
-Route::get('/registerView', function () {
-    return view('pages.userView.registerView.registerView');
-});
+// Route::get('/registerView', function () {
+//     return view('pages.userView.registerView.registerView');
+// });
 // routes untuk admin
 // Route::get('/registerView', function () {
 //     return view('pages.userView.registerView.registerView');
