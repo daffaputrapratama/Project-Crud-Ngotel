@@ -80,4 +80,14 @@ Route::resource('/dataKamar', \App\Http\Controllers\KamarController::class);
 // register dan autentikasi dan user
 Route::post('/register', [regController::class, 'register']);
 Route::post('/login', [logController::class, 'login']);
+
+
+
+Route::get('admin-page', function() {
+    return 'Halaman untuk Admin';
+})->middleware('role:admin')->name('admin.page');
+
+Route::get('user-page', function() {
+    return 'Halaman untuk User';
+})->middleware('role:user')->name('user.page');
 // register dan autentikasi dan user

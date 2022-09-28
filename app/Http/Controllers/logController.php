@@ -9,10 +9,19 @@ use App\Models\User;
 class logController extends Controller
 {
     public function login(Request $request){
-        $credentials=$request->only(['email','password']);
-        if(Auth::attempt($credentials)){
-            return redirect('/dash');
+        $user=$request->only(['email','password']);
+        if(Auth::attempt($user)->hasRole('admin')){
+            return redirect('/');
         }
         return redirect('/loginView')->with('message', 'Login gagal! Data tidak sesuai!');
     }
+
+//     public function authenticated(Request $request, $user)
+// {
+//     if ($user('admin')) {
+//         return redirect()->route('admin.page');
+//     }
+
+//     return redirect()->route('user.page');
+// }
 }
