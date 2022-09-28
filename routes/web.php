@@ -56,7 +56,7 @@ Route::get('/dataRegister', function () {
 });
 
 Route::get('/index', function () {
-    return view('pages.userView.index');
+    return view('landingPage.index');
 });
 
 
