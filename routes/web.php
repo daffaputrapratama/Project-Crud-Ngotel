@@ -51,6 +51,15 @@ Route::get('/loginView', function () {
     return view('pages.userView.loginView.loginView');
 });
 
+Route::get('/bookView', function () {
+    return view('pages.userView.bookView.bookView');
+});
+
+Route::get('/bookRoomView', function () {
+    return view('pages.receptionistView.bookRoomView');
+});
+
+
 Route::get('/dataRegister', function () {
     return view('pages.adminView.dataRegister');
 });
