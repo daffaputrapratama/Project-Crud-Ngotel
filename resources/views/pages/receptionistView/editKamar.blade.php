@@ -236,9 +236,9 @@ data-asset-path="http://127.0.0.1:8000/">
           </button>
         </div> -->
       </div>
-      <div class="bs-stepper-content" style="height:400px;">
+      <div class="bs-stepper-content" style="height:450px;">
         <div id="account-details-modern" class="content" role="tabpanel" aria-labelledby="account-details-modern-trigger">
-        <form action="/dataKamar/{{$kamar->id}}" method="POST">
+        <form action="/receptionist/{{$kamar->id}}" method="POST">
         @method('PUT')
         @csrf
           <div class="content-header">
@@ -280,13 +280,30 @@ data-asset-path="http://127.0.0.1:8000/">
                 <option value="Crystal" @if ($kamar->interiorKamar == "Crystal") selected @endif>Crystal</option>
               </select>
             </div>
-            
-            <div class="mb-3">
+          </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label class="form-label" for="modern-fasilitas">Status Kamar</label>
+                <select class="form-select" aria-label="Fasilitas" name="status">
+                  <option value="Occupied" @if ($kamar->status == "Occupied") selected @endif><span class="badge bg-info text-dark">Occupied</span></option>
+                  <option value="Unoccupied" @if ($kamar->status == "Unoccupied") selected @endif><span class="badge bg-success">Unoccupied</span></option>
+              </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="date">Status Kamar</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="date">Masukan Tanggal</span>
+                  <input type="date" class="form-control" placeholder="date" aria-label="date" aria-describedby="date" name="date" value="{{$kamar->date}}">
+                </div>
+              </div>
+            </div>
+            <div class="col" style="margin-top:-30px ">
               <label for="formFile" class="form-label">Masukan Foto</label>
               <input class="form-control" type="file" id="formFile" name="foto" value="{{$kamar->foto}}">
             </div>
+            
           </div>
-          <div class="d-flex justify-content-end mt-2">
+          <div class="d-flex justify-content-end">
             <!-- <button class="btn btn-outline-secondary btn-prev" disabled>
               <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
               <span class="align-middle d-sm-inline-block d-none">Previous</span>

@@ -161,9 +161,6 @@ data-asset-path="http://127.0.0.1:8000/">
             after selected from the folders. Set <code>clickable</code> to match the button's id for button to work as
             file selector.
           </p>
-          <button id="select-files" class="btn btn-outline-primary mb-1">
-            <i data-feather="file"></i> Click me to select files
-          </button>
           <form action="#" type="file"class="dropzone dropzone-area" id="dpz-btn-select-files">
            
             <div class="dz-message" style="cursor:pointer;">Drop files here or click button to upload.</div>
@@ -236,7 +233,7 @@ data-asset-path="http://127.0.0.1:8000/">
           </button>
         </div> -->
       </div>
-      <div class="bs-stepper-content" style="height:300px;">
+      <div class="bs-stepper-content" style="height:400px;">
         <div id="account-details-modern" class="content" role="tabpanel" aria-labelledby="account-details-modern-trigger">
         <form action="/dataKamar/storeKamar" method="POST">
         @csrf
@@ -306,7 +303,28 @@ data-asset-path="http://127.0.0.1:8000/">
               </select>
             </div>
           </div>
-          <div class="d-flex justify-content-end mt-2">
+            <div class="row">
+              <div class="mb-1 col-md-6">
+                <label class="form-label" for="modern-fasilitas">Status Kamar</label>
+                <select class="form-select" aria-label="Fasilitas" name="status">
+                  <option value="Occupied"><span class="badge bg-info text-dark">Occupied</span></option>
+                  <option value="Unoccupied"><span class="badge bg-success">Unoccupied</span></option>
+              </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="date">Status Kamar</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="date">Masukan Tanggal</span>
+                  <input type="date" class="form-control" placeholder="date" aria-label="date" aria-describedby="date" name="date">
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="formFile" class="form-label">Masukan Foto</label>
+              <input class="form-control" type="file" id="formFile" name="foto">
+            </div>
+          </div>
+          <div class="d-flex justify-content-end">
             <!-- <button class="btn btn-outline-secondary btn-prev" disabled>
               <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
               <span class="align-middle d-sm-inline-block d-none">Previous</span>
