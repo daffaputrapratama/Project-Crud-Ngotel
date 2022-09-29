@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class KamarController extends Controller
 {
-<<<<<<< HEAD
+// <<<<<<< HEAD
     public function tableKamar(){
         $kamar = Kamar::all();
         return view('pages.adminView.kamarTable',compact(['kamar']));
@@ -50,11 +50,12 @@ class KamarController extends Controller
         $kamar= Kamar::find($id);
         $kamar->delete();
         return redirect('/dataKamar');
-=======
+    }
+// =======
     public function dataKamar()
     {
         $dataKamar = Kamar::latest()->paginate(20);
         return view('pages.adminView.dataKamar', compact('dataKamar'));
->>>>>>> c402ebc7a7f6eae3c9e6d2135a502e3058100860
+// >>>>>>> c402ebc7a7f6eae3c9e6d2135a502e3058100860
     }
 }
