@@ -228,7 +228,9 @@ data-asset-path="http://127.0.0.1:8000/">
     <div class="card-body">
       <div class="item-wrapper">
         <div class="item-rating">
+          <sub><span class="badge bg-info text-dark" style="margin-bottom: 5px">{{$data->status}} until {{$data->date}}</span></sub>
           <h2>{{$data->namaKamar}}</h2>
+          
         </div>
         <div>
           <h6 class="item-price">{{$data->typeKamar}}</h6>

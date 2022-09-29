@@ -280,6 +280,7 @@ data-asset-path="http://127.0.0.1:8000/">
                 <option value="Crystal" @if ($kamar->interiorKamar == "Crystal") selected @endif>Crystal</option>
               </select>
             </div>
+            
             <div class="mb-3">
               <label for="formFile" class="form-label">Masukan Foto</label>
               <input class="form-control" type="file" id="formFile" name="foto" value="{{$kamar->foto}}">

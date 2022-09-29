@@ -19,9 +19,9 @@ return new class extends Migration
             $table->string('typeKamar');
             $table->string('fasilitasKamar');
             $table->string('interiorKamar');
-            $table->string('foto');
-            $table->string('status');
-            $table->date('date');
+            $table->string('foto')->nullable();
+            $table->string('status')->nullable();
+            $table->date('date')->nullable();
             $table->timestamps();
         });
     }

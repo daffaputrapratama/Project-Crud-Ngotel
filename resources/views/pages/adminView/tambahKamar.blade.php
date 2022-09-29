@@ -276,6 +276,23 @@ data-asset-path="http://127.0.0.1:8000/">
                 <option value="Crystal">Crystal</option>
               </select>
             </div>
+          </div>
+            <div class="row">
+              <div class="mb-1 col-md-6">
+                <label class="form-label" for="modern-fasilitas">Status Kamar</label>
+                <select class="form-select" aria-label="Fasilitas" name="status">
+                  <option value="Occupied"><span class="badge bg-info text-dark">Occupied</span></option>
+                  <option value="Unoccupied"><span class="badge bg-success">Unoccupied</span></option>
+              </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="date">Status Kamar</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="date">Masukan Tanggal</span>
+                  <input type="date" class="form-control" placeholder="date" aria-label="date" aria-describedby="date" name="date">
+                </div>
+              </div>
+            </div>
             <div class="mb-3">
               <label for="formFile" class="form-label">Masukan Foto</label>
               <input class="form-control" type="file" id="formFile" name="foto">
