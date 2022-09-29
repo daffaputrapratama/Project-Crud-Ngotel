@@ -243,17 +243,6 @@ data-asset-path="http://127.0.0.1:8000/">
           </div>
           <div class="row">
             <div class="mb-1 col-md-6">
-<<<<<<< HEAD
-              <label class="form-label" for="modern-username">Nama</label>
-              <input type="text" id="modern-username" class="form-control" placeholder="johndoe" />
-            </div>
-            <div class="mb-1 col-md-6">
-              <label class="form-label" for="modern-fasilitas">Fasilitas Kamar</label>
-              <select class="form-select" aria-label="Fasilitas" name="fasilitasKamar">
-                <option value="Shower, 2 Kasur, TV, Kulkas, 2 Lemari Besar, 4 Lemari Kecil, Wi-Fi">Shower, 2 Kasur, TV, Kulkas, 2 Lemari Besar, 4 Lemari Kecil, Wi-Fi</option>
-                <option value="Shower, 1 Kasur, TV, Kulkas, 4 Lemari Kecil, Wi-Fi">Shower, 1 Kasur, TV, Kulkas, 4 Lemari Kecil, Wi-Fi</option>
-                <option value="Shower, 1 Kasur, TV, 2 Lemari Kecil">Shower, 1 Kasur, TV, 2 Lemari Kecil</option>
-=======
               <label class="form-label" for="modern-kamar">Nama Kamar</label>
               <select class="form-select" aria-label="Nama Kamar">
                 <option value="DeluxeRoom">Deluxe Room</option>
@@ -267,39 +256,24 @@ data-asset-path="http://127.0.0.1:8000/">
                 <option value="Fasil1">Shower, 2 Kasur, TV, Kulkas, 2 Lemari Besar, 4 Lemari Kecil, Wi-Fi</option>
                 <option value="Fasil2">Shower, 1 Kasur, TV, Kulkas, 4 Lemari Kecil, Wi-Fi</option>
                 <option value="Fasil3">Shower, 1 Kasur, TV, 2 Lemari Kecil</option>
->>>>>>> c402ebc7a7f6eae3c9e6d2135a502e3058100860
               </select>
             </div>
           </div>
           <div class="row">
             <div class="mb-1 col-md-6">
               <label class="form-label" for="modern-typeKamar">Type Kamar</label>
-<<<<<<< HEAD
-              <select class="form-select" aria-label="Kasur" name="typeKamar">
-                <option value="Single Bed">Single Bed</option>
-                <option value="Twin Bed">Twin Bed</option>
-                <option value="Master Bed">Master Bed</option>
-=======
               <select class="form-select" aria-label="Kasur">
                 <option value="SingleBed">Single Bed</option>
                 <option value="TwinBed">Twin Bed</option>
                 <option value="MasterBed">Master Bed</option>
->>>>>>> c402ebc7a7f6eae3c9e6d2135a502e3058100860
               </select>
             </div>
             <div class="mb-1 form-password-toggle col-md-6">
               <label class="form-label" for="modern-interior">Special Interior</label>
-<<<<<<< HEAD
-              <select class="form-select" aria-label="Interior" name="interiorKamar">
-                <option value="Diamond">Diamond</option>
-                <option value="Gold">Gold</option>
-                <option value="Crystal">Crystal</option>
-=======
               <select class="form-select" aria-label="Interior">
                 <option value="SingleBed">Diamond</option>
                 <option value="TwinBed">Gold</option>
                 <option value="MasterBed">Crystal</option>
->>>>>>> c402ebc7a7f6eae3c9e6d2135a502e3058100860
               </select>
             </div>
           </div>
