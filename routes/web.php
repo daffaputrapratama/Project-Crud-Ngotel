@@ -36,6 +36,8 @@ Route::get('/dashHotel', function () {
     return view('pages.adminView.kamarTable');
 });
 Route::get('/dataKamar',[KamarController::class,'tableKamar']);
+Route::get('/dataKamarr',[KamarController::class,'tableKamarr']); 
+// yang data kamarr itu yang ga ada bug pas dicobas
 Route::get('/dataKamar/createKamar',[KamarController::class,'createKamar']);
 Route::post('/dataKamar/storeKamar',[KamarController::class,'storeKamar']);
 Route::get('/dataKamar/{id}/editKamar',[KamarController::class,'editKamar']);
