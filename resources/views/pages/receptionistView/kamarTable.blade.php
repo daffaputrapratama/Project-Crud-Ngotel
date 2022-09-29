@@ -133,8 +133,8 @@ data-asset-path="http://127.0.0.1:8000/">
                                         </a>
                                 </li>
                             <li class="breadcrumb-item">
-                                    <a href="javascript:void(0)">
-                                            Admin
+                                    <a href="/receptionist">
+                                            Receptionist
                                         </a>
                                 </li>
                             <li class="breadcrumb-item">
@@ -156,6 +156,10 @@ data-asset-path="http://127.0.0.1:8000/">
           <h1 class="card-title">Use Button To Select Files</h1>
         </div>
         <div class="card-body">
+          <form action="/receptionist/search" method="GET">
+            @csrf
+              <input type="search" name="search" class="form-control" placeholder="Cari Data...">
+        </form> 
         <table class="table">
             <thead>
               <tr>
@@ -165,6 +169,8 @@ data-asset-path="http://127.0.0.1:8000/">
                 <th scope="col">Fasilitas Kamar</th>
                 <th scope="col">Interior Kamar</th>
                 <th scope="col">Status</th>
+                <th scope="col">Sampai Tanggal</th>
+                <th scope="col">Update</th>
               </tr>
             </thead>
             <tbody>
@@ -176,7 +182,11 @@ data-asset-path="http://127.0.0.1:8000/">
                 <td>{{$data->typeKamar}}</td>
                 <td>{{$data->fasilitasKamar}}</td>
                 <td>{{$data->interiorKamar}}</td>
-                <td><span class="badge bg-info">Occupied</span></td>
+                <td>{{$data->status}}</td>
+                <td>{{$data->date}}</td>
+                <td>
+                  <a href="/receptionist/{{$data->id}}/editKamar" class="btn btn-warning">Update</a>
+                </td>
               </tr>
             @endforeach
             </tbody>
