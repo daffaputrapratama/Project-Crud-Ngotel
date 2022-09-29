@@ -16,27 +16,27 @@
     content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
   <meta name="author" content="PIXINVENT">
   <title>DataTables - Vuexy - Bootstrap HTML & Laravel admin template</title>
-  <link rel="apple-touch-icon" href="http://127.0.0.1:3000/images/ico/favicon-32x32.png">
-  <link rel="shortcut icon" type="image/x-icon" href="http://127.0.0.1:3000/images/logo/favicon.ico">
+  <link rel="apple-touch-icon" href="http://127.0.0.1:8000/images/ico/favicon-32x32.png">
+  <link rel="shortcut icon" type="image/x-icon" href="http://127.0.0.1:8000/images/logo/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"rel="stylesheet">
 
   
   <!-- BEGIN: Vendor CSS-->
-  <link rel="stylesheet" href="http://127.0.0.1:3000/vendors/css/vendors.min.css" />
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/vendors.min.css" />
 
   
-  <link rel="stylesheet" href="http://127.0.0.1:3000/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
-  <link rel="stylesheet" href="http://127.0.0.1:3000/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
-  <link rel="stylesheet" href="http://127.0.0.1:3000/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
-  <link rel="stylesheet" href="http://127.0.0.1:3000/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
-  <link rel="stylesheet" href="http://127.0.0.1:3000/vendors/css/pickers/flatpickr/flatpickr.min.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/pickers/flatpickr/flatpickr.min.css">
 <!-- END: Vendor CSS-->
 
 <!-- BEGIN: Theme CSS-->
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/core.css" />
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/base/themes/dark-layout.css" />
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/base/themes/bordered-layout.css" />
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/base/themes/semi-dark-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/core.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/dark-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/bordered-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/semi-dark-layout.css" />
 
 <!-- datatables -->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
@@ -45,17 +45,17 @@
 <!-- datatables -->
 
 <!-- BEGIN: Page CSS-->
-  <link rel="stylesheet" href="http://127.0.0.1:3000/css/base/core/menu/menu-types/vertical-menu.css" />
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/core/menu/menu-types/vertical-menu.css" />
 
 
 
 <!-- laravel style -->
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/overrides.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/overrides.css" />
 
 <!-- BEGIN: Custom CSS-->
 
   
-  <link rel="stylesheet" href="http://127.0.0.1:3000/css/style.css" />
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/style.css" />
 
 {{-- Index CSS DLL --}}
 <!-- Site Icons -->
@@ -87,7 +87,7 @@ data-open="click"
 data-menu="vertical-menu-modern"
 data-col="default"
 data-framework="laravel"
-data-asset-path="http://127.0.0.1:3000/">
+data-asset-path="http://127.0.0.1:8000/">
   <!-- BEGIN: Header-->
 
 
@@ -118,7 +118,7 @@ data-asset-path="http://127.0.0.1:3000/">
                     <ol class="breadcrumb">
               
                             <li class="breadcrumb-item">
-                                    <a href="http://127.0.0.1:3000">
+                                    <a href="http://127.0.0.1:8000">
                                             Home
                                         </a>
                                 </li>
@@ -142,19 +142,19 @@ data-asset-path="http://127.0.0.1:3000/">
           <i data-feather="grid"></i>
         </button>
         <div class="dropdown-menu dropdown-menu-end">
-          <a class="dropdown-item" href="http://127.0.0.1:3000/app/todo">
+          <a class="dropdown-item" href="http://127.0.0.1:8000/app/todo">
             <i class="me-1" data-feather="check-square"></i>
             <span class="align-middle">Todo</span>
           </a>
-          <a class="dropdown-item" href="http://127.0.0.1:3000/app/chat">
+          <a class="dropdown-item" href="http://127.0.0.1:8000/app/chat">
             <i class="me-1" data-feather="message-square"></i>
             <span class="align-middle">Chat</span>
           </a>
-          <a class="dropdown-item" href="http://127.0.0.1:3000/app/email">
+          <a class="dropdown-item" href="http://127.0.0.1:8000/app/email">
             <i class="me-1" data-feather="mail"></i>
             <span class="align-middle">Email</span>
           </a>
-          <a class="dropdown-item" href="http://127.0.0.1:3000/app/calendar">
+          <a class="dropdown-item" href="http://127.0.0.1:8000/app/calendar">
             <i class="me-1" data-feather="calendar"></i>
             <span class="align-middle">Calendar</span>
           </a>
@@ -299,41 +299,41 @@ data-asset-path="http://127.0.0.1:3000/">
 
   
   <!-- BEGIN: Vendor JS-->
-<script src="http://127.0.0.1:3000/vendors/js/vendors.min.js"></script>
+<script src="http://127.0.0.1:8000/vendors/js/vendors.min.js"></script>
 <!-- BEGIN Vendor JS-->
 <!-- BEGIN: Page Vendor JS-->
-<script src="http://127.0.0.1:3000/vendors/js/ui/jquery.sticky.js"></script>
+<script src="http://127.0.0.1:8000/vendors/js/ui/jquery.sticky.js"></script>
   
-  <script src="http://127.0.0.1:3000/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/tables/datatable/responsive.bootstrap5.min.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/tables/datatable/jszip.min.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/tables/datatable/pdfmake.min.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/tables/datatable/vfs_fonts.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/tables/datatable/buttons.html5.min.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/tables/datatable/buttons.print.min.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
-  <script src="http://127.0.0.1:3000/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/tables/datatable/responsive.bootstrap5.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/tables/datatable/jszip.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/tables/datatable/pdfmake.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/tables/datatable/vfs_fonts.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/tables/datatable/buttons.print.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
+  <script src="http://127.0.0.1:8000/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
 <!-- END: Page Vendor JS-->
 
 
 <!-- BEGIN: Theme JS-->
-<script src="http://127.0.0.1:3000/js/core/app-menu.js"></script>
-<script src="http://127.0.0.1:3000/js/core/app.js"></script>
+<script src="http://127.0.0.1:8000/js/core/app-menu.js"></script>
+<script src="http://127.0.0.1:8000/js/core/app.js"></script>
 
 <!-- custome scripts file for user -->
-<script src="http://127.0.0.1:3000/js/core/scripts.js"></script>
+<script src="http://127.0.0.1:8000/js/core/scripts.js"></script>
 
-<script src="http://127.0.0.1:3000/js/scripts/customizer.js"></script>
+<script src="http://127.0.0.1:8000/js/scripts/customizer.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
 
 <!-- END: Theme JS-->
 <!-- BEGIN: Page JS-->
   
-  <script src="http://127.0.0.1:3000/js/scripts/tables/table-datatables-basic.js"></script>
+  <script src="http://127.0.0.1:8000/js/scripts/tables/table-datatables-basic.js"></script>
 <!-- END: Page JS-->
 
   <script type="text/javascript">

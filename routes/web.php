@@ -32,7 +32,9 @@ Route::get('/suksesView', function () {
 Route::get('/', function () {
     return view('pages.userView.loginView.loginView');
 });
-
+Route::get('/dashHotel', function () {
+    return view('pages.adminView.kamarTable');
+});
 Route::get('/dataKamar',[KamarController::class,'tableKamar']);
 Route::get('/dataKamar/createKamar',[KamarController::class,'createKamar']);
 Route::post('/dataKamar/storeKamar',[KamarController::class,'storeKamar']);
@@ -78,9 +80,9 @@ Route::resource('/dataKamar', \App\Http\Controllers\KamarController::class);
 // });
 
 
-// Route::get('/registerView', function () {
-//     return view('pages.userView.registerView.registerView');
-// });
+Route::get('/registerView', function () {
+    return view('pages.userView.registerView.registerView');
+});
 // routes untuk admin
 // Route::get('/registerView', function () {
 //     return view('pages.userView.registerView.registerView');

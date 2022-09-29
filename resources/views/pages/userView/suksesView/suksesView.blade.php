@@ -16,8 +16,8 @@
     content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
   <meta name="author" content="PIXINVENT">
   <title>Verify Email Cover - Vuexy - Bootstrap HTML & Laravel admin template</title>
-  <link rel="apple-touch-icon" href="http://127.0.0.1:3000/images/ico/favicon-32x32.png">
-  <link rel="shortcut icon" type="image/x-icon" href="http://127.0.0.1:3000/images/logo/favicon.ico">
+  <link rel="apple-touch-icon" href="http://127.0.0.1:8000/images/ico/favicon-32x32.png">
+  <link rel="shortcut icon" type="image/x-icon" href="http://127.0.0.1:8000/images/logo/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
     rel="stylesheet">
 
@@ -28,52 +28,52 @@
 <!-- END: Vendor CSS-->
 
 <!-- BEGIN: Theme CSS-->
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/core.css" />
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/base/themes/dark-layout.css" />
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/base/themes/bordered-layout.css" />
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/base/themes/semi-dark-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/core.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/dark-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/bordered-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/semi-dark-layout.css" />
 
 
 <!-- BEGIN: Page CSS-->
-  <link rel="stylesheet" href="http://127.0.0.1:3000/css/base/core/menu/menu-types/vertical-menu.css" />
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/core/menu/menu-types/vertical-menu.css" />
 
 
-  <link rel="stylesheet" href="http://127.0.0.1:3000/css/base/pages/authentication.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/pages/authentication.css">
 
 <!-- laravel style -->
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/overrides.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/overrides.css" />
 
 <!-- BEGIN: Custom CSS-->
 
   
-  <link rel="stylesheet" href="http://127.0.0.1:3000/css/style.css" />
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/style.css" />
 
   
   <!-- BEGIN: Vendor CSS-->
-  <link rel="stylesheet" href="http://127.0.0.1:3000/vendors/css/vendors.min.css" />
+  <link rel="stylesheet" href="http://127.0.0.1:8000/vendors/css/vendors.min.css" />
 
 <!-- END: Vendor CSS-->
 
 <!-- BEGIN: Theme CSS-->
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/core.css" />
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/base/themes/dark-layout.css" />
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/base/themes/bordered-layout.css" />
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/base/themes/semi-dark-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/core.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/dark-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/bordered-layout.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/base/themes/semi-dark-layout.css" />
 
 
 <!-- BEGIN: Page CSS-->
-  <link rel="stylesheet" href="http://127.0.0.1:3000/css/base/core/menu/menu-types/vertical-menu.css" />
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/core/menu/menu-types/vertical-menu.css" />
 
 
-  <link rel="stylesheet" href="http://127.0.0.1:3000/css/base/pages/authentication.css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/base/pages/authentication.css">
 
 <!-- laravel style -->
-<link rel="stylesheet" href="http://127.0.0.1:3000/css/overrides.css" />
+<link rel="stylesheet" href="http://127.0.0.1:8000/css/overrides.css" />
 
 <!-- BEGIN: Custom CSS-->
 
   
-  <link rel="stylesheet" href="http://127.0.0.1:3000/css/style.css" />
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/style.css" />
 </head>
 
 
@@ -81,7 +81,7 @@
 <body
   class="vertical-layout vertical-menu-modern   blank-page blank-page"
   data-menu="vertical-menu-modern" data-col="blank-page" data-framework="laravel"
-  data-asset-path="http://127.0.0.1:3000/">
+  data-asset-path="http://127.0.0.1:8000/">
 
   <!-- BEGIN: Content-->
   <div class="app-content content ">
@@ -126,7 +126,7 @@
     <!-- Left Text-->
     <div class="d-none d-lg-flex col-lg-8 align-items-center p-5">
       <div class="w-100 d-lg-flex align-items-center justify-content-center px-5">
-                <img src="http://127.0.0.1:3000/images/illustration/verify-email-illustration.svg" class="img-fluid" alt="two steps verification" />
+                <img src="http://127.0.0.1:8000/images/illustration/verify-email-illustration.svg" class="img-fluid" alt="two steps verification" />
                 </div>
     </div>
     <!-- /Left Text-->
@@ -154,14 +154,14 @@
 
   
   <!-- BEGIN: Vendor JS-->
-<script src="http://127.0.0.1:3000/vendors/js/vendors.min.js"></script>
+<script src="http://127.0.0.1:8000/vendors/js/vendors.min.js"></script>
 <!-- BEGIN Vendor JS-->
 <!-- BEGIN: Page Vendor JS-->
-<script src="http://127.0.0.1:3000/vendors/js/ui/jquery.sticky.js"></script>
+<script src="http://127.0.0.1:8000/vendors/js/ui/jquery.sticky.js"></script>
 <!-- END: Page Vendor JS-->
 <!-- BEGIN: Theme JS-->
-<script src="http://127.0.0.1:3000/js/core/app-menu.js"></script>
-<script src="http://127.0.0.1:3000/js/core/app.js"></script>
+<script src="http://127.0.0.1:8000/js/core/app-menu.js"></script>
+<script src="http://127.0.0.1:8000/js/core/app.js"></script>
 
 <!-- custome scripts file for user -->
 <script src="http://127.0.0.1:8000/js/core/scripts.js"></script>

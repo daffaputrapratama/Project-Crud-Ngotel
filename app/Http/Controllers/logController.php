@@ -11,8 +11,8 @@ class logController extends Controller
     public function login(Request $request){
         $user=$request->only(['email','password']);
        
-        if(Auth::attempt($user)->hasRole('admin')){
-            return redirect('/');
+        if(Auth::attempt($user)){
+            return redirect('/dashHotel');
         }
         return redirect('/loginView')->with('message', 'Login gagal! Data tidak sesuai!');
     }
