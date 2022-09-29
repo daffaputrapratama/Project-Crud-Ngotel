@@ -12,6 +12,12 @@ class KamarController extends Controller
         return view('pages.adminView.kamarTable',compact(['kamar']));
     }
 
+    public function tableKamarr(){
+        return view("pages.adminView.kamarTable", [
+            "kamar"=>Kamar::all()
+        ]);
+    }
+
     public function receptionistTable(){
         $kamar = Kamar::all();
         return view('pages.receptionistView.kamarTable',compact(['kamar']));
